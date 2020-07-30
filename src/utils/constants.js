@@ -1,0 +1,1 @@
+export const imageHostUri = 'https://i.dietdoctor.com'
