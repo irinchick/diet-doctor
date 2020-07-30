@@ -20,7 +20,8 @@ const MealCardWrapper = styled.div`
       color: #ffffff;
     }
     p{
-      display:none
+      display:none;
+      font-size: .8rem
     }
     &:hover{
       background-image: none;
@@ -36,12 +37,9 @@ const MealCard =  props => {
     const { title, description, image } = props;
     return (
       <MealCardWrapper image={image}>
-
         <h2>{title}</h2>
         <p>{description}</p>
-       
       </MealCardWrapper>
-
   );
 }
 

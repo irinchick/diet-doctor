@@ -6,9 +6,13 @@ const Image = `{
     hz
 }`
 const Nutrition = `{
-    default,
-    vt,
-    hz
+    values {
+        carbs,
+        fat,
+        protein,
+        fiber,
+        calories
+    }
 }`
 
 const Recipe = `{
@@ -19,6 +23,7 @@ const Recipe = `{
         default,
         allowed
     }
+    nutrition ${Nutrition}
 }`
 
 export const MealPlan = `{

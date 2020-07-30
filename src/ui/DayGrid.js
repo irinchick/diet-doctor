@@ -6,21 +6,21 @@ const DayGridWrapper = styled.div`
     flex-direction: row;
     margin-top: 1.3rem;
     justify-content: space-between;
-    @media (max-width: 900px) {
-        
+
+    @media (max-width: 700px) {
+        flex-direction: column;
       }
-    >* {
-        
-    }
 }
 `
 const MealCardWrapper = styled.div`
-    flex-basis: 30%;
+    flex-basis: 31%;
     overflow: hidden;
     position:relative;
     min-height: 15rem;
+
     @media (max-width: 700px) {
-        flex-basis: 100%;
+        flex-basis: 100vw;
+        min-height: 70vh;
     }
 `;
 
