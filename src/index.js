@@ -5,10 +5,12 @@ import * as serviceWorker from './serviceWorker';
 import { ApolloClient, ApolloProvider, InMemoryCache, createHttpLink } from '@apollo/client';
 import { setContext } from '@apollo/link-context';
 import GlobalStyles from './ui/GlobalStyles';
+import { apiLink } from './utils/constants';
 
 const cache = new InMemoryCache();
+
 const link = createHttpLink({
-  uri: 'https://ddapi.production.dietdoctor.com/v1'
+  uri: apiLink
 })
 
 const authLink = setContext((_, { headers }) => {

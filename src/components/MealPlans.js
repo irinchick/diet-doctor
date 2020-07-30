@@ -16,17 +16,17 @@ const shapeWeekObj = schedule => {
 
 function MealPlans() {
     const { loading, error, data } = useQuery(GET_MEMBER_MEAL_PLANS);
+    
     if(loading)
         return <div>Loading...</div>
+
     if(error)
-    return <div>Error...</div>
+        return <div>Error...</div>
 
     const mealPlans = data.memberMealplans;
     
-
     return (
     <div>
-    
       {mealPlans.map(mealPlan => {
       return <MealPlanCard 
         key={mealPlan.id} 
