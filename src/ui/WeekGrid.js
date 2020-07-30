@@ -46,7 +46,7 @@ const WeekGrid =  props => {
         {week.map(day=> 
         <WeekGridCell>
             <WeekCellTitle>{day.day}</WeekCellTitle>
-            <img src={day.image}/>
+            <img src={day.image} />
         </WeekGridCell>)}
       </WeekGridWrapper>
 

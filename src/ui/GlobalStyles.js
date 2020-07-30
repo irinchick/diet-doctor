@@ -17,5 +17,10 @@ export default createGlobalStyle`
   a {
     color: #6188ce;
     text-decoration: none;
+  }
+  h2 {
+    text-transform: uppercase;
+    font-weight: 200;
+    margin: 3rem 0 0;
 }
 `;
