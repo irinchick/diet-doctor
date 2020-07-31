@@ -6,7 +6,7 @@ const MealCardWrapper = styled.div`
     background-size: cover;
     background-position: 50% 50%;
     position: absolute;
-    background-color: #eee;
+    background-color: #000000;
     width:100%;
     height:100%;
     top:3.5rem;
@@ -21,7 +21,8 @@ const MealCardWrapper = styled.div`
     }
     p{
       display:none;
-      font-size: .8rem
+      font-size: .8rem;
+      color: #ffffff;
     }
     &:hover{
       background-image: none;
@@ -34,11 +35,13 @@ const MealCardWrapper = styled.div`
     
 
 const MealCard =  props => {
-    const { title, description, image } = props;
+    const { title, description, image, additionalInfo } = props;
+
     return (
       <MealCardWrapper image={image}>
         <h2>{title}</h2>
         <p>{description}</p>
+        <p>{additionalInfo}</p>
       </MealCardWrapper>
   );
 }

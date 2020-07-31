@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import MealCard from './MealCard'
+import MealCard from './MealCard';
+
 const DayGridWrapper = styled.div`
     display: flex;
     flex-direction: row;
@@ -11,12 +12,13 @@ const DayGridWrapper = styled.div`
         flex-direction: column;
       }
 }
-`
+`;
+
 const MealCardWrapper = styled.div`
     flex-basis: 31%;
     overflow: hidden;
     position:relative;
-    min-height: 15rem;
+    min-height: 18rem;
 
     @media (max-width: 700px) {
         flex-basis: 100vw;
@@ -36,6 +38,7 @@ const DayGrid =  props => {
                     title={meal.recipe.title}
                     description={meal.recipe.description}
                     image={meal.image}
+                    additionalInfo = {meal.additionalInfo}
                 />}
             </MealCardWrapper>
             )}

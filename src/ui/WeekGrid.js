@@ -23,7 +23,7 @@ const WeekGridCell = styled.div`
     img{
         @media (max-width: 900px) {
             max-height: 15rem
-          }
+        }
     }
     `
 const WeekCellTitle = styled.h3`
@@ -36,7 +36,7 @@ const WeekCellTitle = styled.h3`
         text-shadow: 2px -1px rgba(255,255,255, 0.5);
         font-size: .8rem;
         left: .4rem;
-      }
+    }
 `
 
 const WeekGrid =  props => {

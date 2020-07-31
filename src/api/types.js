@@ -5,6 +5,7 @@ const Image = `{
     vt,
     hz
 }`
+
 const Nutrition = `{
     values {
         carbs,

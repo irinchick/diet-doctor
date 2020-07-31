@@ -1,5 +1,5 @@
 import { gql } from '@apollo/client';
-import { MealPlan } from './types'
+import { MealPlan } from './types';
 
 
 export const GET_MEMBER_MEAL_PLANS = gql`{

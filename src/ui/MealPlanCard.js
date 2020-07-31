@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import WeekGrid from './WeekGrid';
 import { Link } from "react-router-dom";
+
 const MealPlanCardWrapper = styled.div`
     border-bottom: 2px solid #f2f2f2;
     padding-bottom: 3rem;
@@ -13,10 +14,11 @@ const MealPlanCardWrapper = styled.div`
     p{
         margin-top: .5rem;
     }
-`
+`;
 
 const MealPlanCard =  props => {
     const { title, description, weekSneakObj, link } = props;
+
     return (
       <MealPlanCardWrapper>
         <h2>{title}</h2>
